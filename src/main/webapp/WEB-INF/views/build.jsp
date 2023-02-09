@@ -8,9 +8,9 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body>
+<body bgcolor="gray" text="white">
 
-	<h1>Build Your Own Pizza</h1>
+	<h1><font face="Brush Script MT">Build Your Own Pizza</font></h1>
 	<form action="/build-form-submit" method="get">
 		<h2>
 			<label for="size-input">Size:</label> 
@@ -23,7 +23,13 @@
 		<h2>
 			<label for="toppings-input">How many toppings?</label> 
 			<input name="toppings" id="toppings-input" />
+			
 		</h2>
+		<p>
+			<c:forEach var="x" items="${toppings}">
+				<p><c:out value="${x}"></c:out></p>
+			</c:forEach>
+		</p>
 		<h2>
 			<input name="gluten" type="checkbox"/>
 			<label for="gluten-input">Gluten Free? ($2.00 Extra)</label> 
