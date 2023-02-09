@@ -6,8 +6,8 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body>
-	<h1>Leave a Review</h1>
+<body bgcolor="gray" text="white">
+	<h1><font face="Brush Script MT">Leave a Review</font></h1>
 	<form action="/review-form-submit" method="get">
 		<h2>
 			<label for="name-input">Your Name</label>
