@@ -1,10 +1,7 @@
 package co.grandcircus.springlab;
 
-import java.awt.Checkbox;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -20,7 +17,7 @@ public class SpringController {
 	@RequestMapping("/aP")
 	public String anchovy(Model model) {
 		String anchovy = " Anchovy Lover's";
-		String price = "$15.0";
+		double price = 15.0;
 		model.addAttribute("anchovy", anchovy);
 		model.addAttribute("price", price);
 		return "anchovy";
@@ -30,7 +27,7 @@ public class SpringController {
 	@RequestMapping("/pP")
 	public String paleo(Model model) {
 		String paleo = " Paleo Pizza";
-		String price = "$20.0";
+		int price = 20;
 		model.addAttribute("paleo", paleo);
 		model.addAttribute("price", price);
 		return "paleo";
@@ -40,7 +37,7 @@ public class SpringController {
 	@RequestMapping("/dP")
 	public String dessert(Model model) {
 		String dessert = " Dessert Pizza";
-		String price = "$12.0";
+		double price = 12.0;
 		model.addAttribute("dessert", dessert);
 		model.addAttribute("price", price);
 		return "dessert";
