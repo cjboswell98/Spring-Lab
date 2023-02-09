@@ -6,8 +6,8 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body>
-	<h1>Specialty Pizza: ${ dessert } </h1>
+<body bgcolor="gray" text="white">
+	<h1><font face="Brush Script MT">Specialty Pizza: ${ dessert }</font> </h1>
 	<p>Name: ${ dessert }</p>
 	<p>Price: ${ price }</p>
 	<a href="/">Back to Homepage</a>
